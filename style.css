@@ -5,6 +5,7 @@ body{
 
 .container{
     display: grid;
+    flex-wrap: wrap;
 }
 
 .portfolio{
@@ -57,17 +58,20 @@ body{
 
 .Contact-info{
     background-color: grey;
+    width: 100%;
+    margin: auto;
 }
 
-.responsive{
+/* .pictures{
     width: 100%;
     height: auto;
-}
+} */
 
+/* adds a fixed bar
 .sticky{
     position: fixed;
     bottom: 0;
-}
+} */
 
 .svg{
     display: flex;
@@ -78,10 +82,14 @@ body{
 }
 
 .polygon{
-    animation-name: moves;
-    animation-duration: 10s;
+    /* animation: move-around 5s infinite; */
+    animation: spin 2s linear infinite;
+    transform-origin: 105px 0px;
 }
 
+.rect{
+    position: fixed;
+}
 @keyframes rainbow{
     from {background-color:orange;}
     to {background-color: blueviolet;}
@@ -91,6 +99,32 @@ body{
     from {background-color:rgb(58, 47, 28);}
     to {background-color:rgb(0, 132, 255);}
 }
+
+@keyframes spin {
+    0% { transform: rotatey(0deg);}
+    100% { transform: rotatey(359deg);}
+}
+/* @keyframes move-around {
+    0% {
+      transform: translate(-40%, -35%);
+    }
+  
+    25% {
+      transform: translate(40%, -35%);
+    }
+  
+    50% {
+      transform: translate(40%, 35%);
+    }
+  
+    75% {
+      transform: translate(-40%, 35%);
+    }
+  
+    100% {
+      transform: translate(-40%, -35%);
+    }
+  } */
 
 .Title{
     display: flex;
@@ -109,4 +143,29 @@ body{
 
 .videos{
     display: flex;
+}
+
+@media(max-width:768px){
+    .videos{
+        display: flex;
+    }
+    .gif{
+        display: flex;
+    }
+    /* trial */
+    .pictures{
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pic-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+@media(max-width:320px){
+    .container-2{
+        display: block;
+}
 }
