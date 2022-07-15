@@ -1,222 +1,26 @@
-body{
-    font: normal 16px Arial, Helvetica, sans-serif;
-    line-height: 1.6em;
+/* 1.) add google font */
+
+
+.root{
+    /* font-family: ; */
 }
 
-.container{
-    display: grid;
-    flex-wrap: wrap;
+.header{
+ display: grid;
+ background-color: red;
 }
 
 .body{
+    display: grid;
+    background-color: blue;
+}
+
+.footer{
+    display: grid;
+    background-color: green;
+}
+
+.bitem1{
     display: flex;
-    flex-wrap: wrap;   
-    background-color: lightgray;
+    background-color: purple;
 }
-
-.container-3{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.portfolio{
-    margin: auto;
-    display: flex;
-    width: 100%;
-    background-color: grey;
-    color: #2b2727;
-    text-align: center;
-    font-size: large;
-    /* justify-content: space-evenly; */
-    z-index: -1;
-}
-
-.box1{
-    text-align: center;
-    background-color: grey;
-    margin: auto;
-    width: 100%;
-    margin-top: 2em;
-    align-items: center;
-    display: flex;
-}
-
-.summary{
-    text-align: left;
-    padding-left: 20px;
-    margin-right: 5em;
-}
-
-.links{
-    padding: 5px;
-}
-
-.nbar{
-    list-style-type: none;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: grey;
-    align-items: flex-end;
-    width: 100%;
-    font-size: 24px;
-}
-
-.nbar a:hover{
-    background-color: rgb(26, 212, 236);
-    color: black;
-}
-
-.Contact-info{
-    background-color: grey;
-    width: 100%;
-    margin: auto;
-}
-
-/* .pictures{
-    width: 100%;
-    height: auto;
-} */
-
-/* adds a fixed bar
-.sticky{
-    position: fixed;
-    bottom: 0;
-} */
-
-.svg{
-    display: flex;
-    justify-content: start;
-    z-index: 0;
-    animation-name: rainbow;
-    animation-duration: 5s;
-}
-
-.polygon{
-    /* animation: move-around 5s infinite; */
-    animation: spin 2s linear infinite;
-    transform-origin: 105px 0px;
-}
-
-.rect{
-    position: fixed;
-}
-@keyframes rainbow{
-    from {background-color:orange;}
-    to {background-color: blueviolet;}
-}
-
-@keyframes moves{
-    from {background-color:rgb(58, 47, 28);}
-    to {background-color:rgb(0, 132, 255);}
-}
-
-@keyframes spin {
-    0% { transform: rotatey(0deg);}
-    100% { transform: rotatey(359deg);}
-}
-
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    /* right: 728px; */
-    justify-content: center;
-    width: 75%;
-}
-
-.pictures{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.body-top{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.pic-1{
-    width: 49%;
-    height:100%;
-    border: 5px;
-    border-style: solid;
-    border-color: black;
-    background-color: aquamarine;
-}
-
-.pic-2{
-    width: 49%;
-    height:100%;
-    border: 5px;
-    border-style: solid;
-    border-color: black;
-    background-color: aquamarine;
-}
-
-.pic-3{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    border: 5px;
-    border-style: solid;
-    border-color: black;
-    background-color: aquamarine;
-}
-
-.caption{
-    padding:5px;
-}
-
-.videos{
-    display: flex;
-    width: 50%;
-}
-
-@media(max-width:768px){
-    .videos{
-        display: flex;
-    }
-    .gif{
-        display: flex;
-    }
-    /* trial */
-    .pictures{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .pic-1{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-}
-@media(max-width:320px){
-    .body{
-        display: block;
-}
-}
-
-.table {
-    width: 100%;
-    text-align: center;
-    table-layout: fixed;
-    border: 5px solid black;
-    text-align: center;
-    background-color: aquamarine;
-
-  }
-  th,
-  td {
-    border: 1px solid black;
-    text-align: center;
-  }
-
