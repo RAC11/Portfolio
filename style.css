@@ -8,6 +8,20 @@ body{
     flex-wrap: wrap;
 }
 
+.container-2{
+    display: flex;
+    background-color: blue;
+    
+}
+
+.container-3{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(229, 255, 0);
+
+}
+
+
 .portfolio{
     margin: auto;
     display: flex;
@@ -104,29 +118,8 @@ body{
     0% { transform: rotatey(0deg);}
     100% { transform: rotatey(359deg);}
 }
-/* @keyframes move-around {
-    0% {
-      transform: translate(-40%, -35%);
-    }
-  
-    25% {
-      transform: translate(40%, -35%);
-    }
-  
-    50% {
-      transform: translate(40%, 35%);
-    }
-  
-    75% {
-      transform: translate(-40%, 35%);
-    }
-  
-    100% {
-      transform: translate(-40%, -35%);
-    }
-  } */
 
-.Title{
+.title{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,11 +131,32 @@ body{
 
 .pictures{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.pic-1{
+    background-color: rgb(196, 255, 206);
+    width: 50%;
+}
+
+.pic-2{
+    background-color: rgb(255, 196, 250);
+    width: 50%;
+}
+
+.pic-3{
+    background-color: rgb(33, 95, 97);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
 
 .videos{
     display: flex;
+    width: 50%;
 }
 
 @media(max-width:768px){
@@ -154,7 +168,6 @@ body{
     }
     /* trial */
     .pictures{
-        flex-direction: row;
         display: flex;
         flex-wrap: wrap;
     }
@@ -170,5 +183,4 @@ body{
 }
 }
 
-.table{
-}
+
