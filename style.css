@@ -4,6 +4,7 @@
 .root{
     /* font-family: ; */
     font-family: "Trirong", serif;
+    width: 100%;
 }
 
 .header{
@@ -27,6 +28,7 @@
     align-items: flex-end;
     width: 100%;
     font-size: 24px;
+    flex-wrap: wrap;
 }
 
 .banner{
@@ -45,10 +47,11 @@
     display: flex;
     justify-content: start;
     z-index: 0;
-    /* animation-name: rainbow;
-    animation-duration: 5s; */
-    background-color: blueviolet;
-} */
+    animation-name: rainbow;
+    animation-duration: 5s;
+    background-color: blueviolet; */
+
+
 
 .title{
     display: flex;
@@ -74,12 +77,14 @@
     .body{
         display: grid;
         background-color: blue;
+        width: 100%;
     }
 
     .pictures{
         display: flex;
         flex-wrap: wrap;
         background-color: #2b2727;
+        width: 100%;
     }
 
     .body-top{
@@ -101,6 +106,7 @@
         border: 5px;
         border-style: solid;
         border-color: black;
+        flex-wrap: wrap;
     }
     
     .bitem2{
@@ -111,10 +117,20 @@
         border-style: solid;
         border-color: black;
         background-color: rgb(127, 28, 173);
+        flex-wrap: wrap;
     }
 
+.body-bot{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(131, 151, 15);
+}
+
     .bitem3{
-        width: 100%;
+        width: 96%;
         height: 300px;
         display: flex;
         align-items: center;
@@ -124,6 +140,7 @@
         border-style: solid;
         border-color: black;
         background-color: rgb(5, 65, 45);
+
     }
 
     .videos{
@@ -154,8 +171,22 @@
 
     .contact-info{
         display: flex;
-        background-color: grey;
+        background-color: rgb(112, 63, 114);
+        flex-wrap: wrap;
+        align-items: flex-end;
         width: 100%;
-        margin: auto;
     }
     
+@media(max-width:527px){
+    .bitem1{
+        width:100%
+    }
+    .bitem2{
+        width:100%
+    }
+    .root{
+        display: grid;
+        width: 100%;
+        grid-template-rows: 1fr;
+    }
+}
