@@ -3,6 +3,7 @@
 
 .root{
     /* font-family: ; */
+    display: grid;
     font-family: "Trirong", serif;
     width: 100%;
 }
@@ -31,6 +32,11 @@
     flex-wrap: wrap;
 }
 
+.nbar a:hover{
+    background-color: rgb(26, 212, 236);
+    color: black;
+}
+    
 .banner{
     margin: auto;
     display: flex;
@@ -49,8 +55,8 @@
     z-index: 0;
     animation-name: rainbow;
     animation-duration: 5s;
-    background-color: blueviolet; */
-
+    background-color: blueviolet;
+} */
 
 
 .title{
@@ -107,6 +113,8 @@
         border-style: solid;
         border-color: black;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
     
     .bitem2{
@@ -118,6 +126,8 @@
         border-color: black;
         background-color: rgb(127, 28, 173);
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
 .body-bot{
@@ -140,8 +150,13 @@
         border-style: solid;
         border-color: black;
         background-color: rgb(5, 65, 45);
-
     }
+
+    /* .caption{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    } */
 
     .videos{
         display: flex;
@@ -181,12 +196,56 @@
     .bitem1{
         width:100%
     }
+
     .bitem2{
         width:100%
     }
+
     .root{
         display: grid;
         width: 100%;
         grid-template-rows: 1fr;
+    }
+}
+
+@media(max-width:283px){
+    .bitem1{
+        width:100%
+    }
+
+    .bitem2{
+        width:100%
+    }
+
+    /* .root{
+        display: grid;
+        width: 100%;
+        grid-template-rows: 1fr;
+    } */
+
+    .banner{
+        display: block;
+    }
+
+    .nbar{
+        display: block;
+        flex-wrap: wrap;
+        flex: auto;
+    }
+
+    .body-top{
+        display: block;
+    }
+
+    .body-bot{
+        display: block;
+    }
+
+    .videos{
+        display: block;
+    }
+
+    .table{
+        display: block;
     }
 }
