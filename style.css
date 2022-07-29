@@ -16,6 +16,10 @@
  color: #2b2727;
  text-align: center;
  font-size: large;
+ box-sizing: border-box; 
+ border: 5px;
+ border-style: solid;
+ border-color: black;
  /* justify-content: space-evenly; */
  /* z-index: -1; */
 }
@@ -109,18 +113,21 @@
         background-color: purple;
         width: 48%;
         height:300px;
+        box-sizing: border-box; 
         border: 5px;
         border-style: solid;
         border-color: black;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin-bottom: 5px;
     }
     
     .bitem2{
         display: flex;
         width: 48%;
         height:300px;
+        box-sizing: border-box;
         border: 5px;
         border-style: solid;
         border-color: black;
@@ -128,6 +135,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        margin-bottom: 5px
     }
 
 .body-bot{
@@ -146,6 +154,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        box-sizing: border-box;
         border: 5px;
         border-style: solid;
         border-color: black;
@@ -163,15 +172,17 @@
         width: 100%;
         background-color: brown;
         justify-content: center;
+        box-sizing: border-box;
         border: 5px;
         border-style: solid;
         border-color: black;
-        border-bottom-style: none;
-        border-top-style: none;
+        margin-top: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .table{
-        display: block;
+        display: flex;
         justify-content: center;
         background-color: antiquewhite;
     }
@@ -179,32 +190,38 @@
     table, th, td {
         border: 1px solid;
     }
-      
-    table {
-        width: 100%;
+
+    th, td {
+        width: 30%;
+        text-align: center;
     }
 
-    .ptable{
+    table {
+        width: 75%;
+    }
+
+    .roadmap {
+        background-color:rgb(14, 110, 70) ;
         display: flex;
-        width:100%;
         justify-content: center;
+    
     }
 
     .footer{
         display: grid;
         background-color: green;
     }
-
+    
     .contact-info{
         display: flex;
         background-color: rgb(112, 63, 114);
         flex-wrap: wrap;
         align-items: flex-end;
-        width: 99.5%;
+        width: 100%;
+        box-sizing: border-box;
         border: 5px;
         border-style: solid;
         border-color: black;
-        border-top-style: none;
     }
     
 @media(max-width:527px){
@@ -230,6 +247,10 @@
 
     .bitem2{
         width:100%
+    }
+
+    .bitem3{
+        width: 100%;
     }
 
     /* .root{
