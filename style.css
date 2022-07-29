@@ -12,7 +12,7 @@
  display: grid;
  margin-right: 10px;
  width: 100%;
- background-color: grey;
+ background-color: antiquewhite;
  color: #2b2727;
  text-align: center;
  font-size: large;
@@ -29,7 +29,7 @@
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(12, 185, 35);
+    background-color: orange;
     align-items: flex-end;
     width: 100%;
     font-size: 24px;
@@ -71,29 +71,34 @@
     /* right: 728px; */
     justify-content: center;
     width: 100%;
-    background-color: rgb(231, 116, 116);
+    background-color: antiquewhite;
 }
 
 .hbox1{
     text-align: center;
-    background-color: rgb(47, 138, 145);
+    background-color: antiquewhite;
     margin: auto;
     width: 100%;
     margin-top: 2em;
     align-items: center;
     display: flex;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-width: 5px;
+    border-color: black;
+    padding-left: 5px;
 }
 
     .body{
         display: grid;
-        background-color: blue;
+        background-color: rgb(155, 208, 255);
         width: 100%;
     }
 
     .pictures{
         display: flex;
         flex-wrap: wrap;
-        background-color: #2b2727;
+        background-color: rgb(155, 208, 255);
         width: 100%;
     }
 
@@ -110,7 +115,7 @@
 
     .bitem1{
         display: flex;
-        background-color: purple;
+        background-color: antiquewhite;
         width: 48%;
         height:300px;
         box-sizing: border-box; 
@@ -131,7 +136,7 @@
         border: 5px;
         border-style: solid;
         border-color: black;
-        background-color: rgb(127, 28, 173);
+        background-color: antiquewhite;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
@@ -144,7 +149,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    background-color: rgb(131, 151, 15);
+    background-color: rgb(155, 208, 255);
 }
 
     .bitem3{
@@ -158,7 +163,7 @@
         border: 5px;
         border-style: solid;
         border-color: black;
-        background-color: rgb(5, 65, 45);
+        background-color: antiquewhite;
     }
 
     /* .caption{
@@ -170,7 +175,7 @@
     .videos{
         display: flex;
         width: 100%;
-        background-color: brown;
+        background-color: antiquewhite;
         justify-content: center;
         box-sizing: border-box;
         border: 5px;
@@ -201,7 +206,7 @@
     }
 
     .roadmap {
-        background-color:rgb(14, 110, 70) ;
+        background-color:antiquewhite ;
         display: block;
         justify-content: center;
         text-align: center;
@@ -215,19 +220,19 @@
 
     .footer{
         display: grid;
-        background-color: green;
     }
     
     .contact-info{
         display: flex;
-        background-color: rgb(112, 63, 114);
+        background-color: antiquewhite;
         flex-wrap: wrap;
-        align-items: flex-end;
+        align-items: center;
         width: 100%;
         box-sizing: border-box;
         border: 5px;
         border-style: solid;
         border-color: black;
+        padding-left: 5px;
     }
     
 @media(max-width:527px){
@@ -243,6 +248,21 @@
         display: grid;
         width: 100%;
         grid-template-rows: 1fr;
+    }
+
+    .hbox1{
+        display: block;
+    }
+
+}
+
+@media(max-width:440px){
+    .contact-info{
+        display: block;
+        align-items: center;
+        text-align: center;
+        list-style-position: inside;
+        padding-right: 40px;
     }
 }
 
