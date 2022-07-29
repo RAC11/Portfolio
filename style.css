@@ -10,7 +10,7 @@
 
 .header{
  display: grid;
- margin: auto;
+ margin-right: 10px;
  width: 100%;
  background-color: grey;
  color: #2b2727;
@@ -202,9 +202,15 @@
 
     .roadmap {
         background-color:rgb(14, 110, 70) ;
-        display: flex;
+        display: block;
         justify-content: center;
-    
+        text-align: center;
+        box-sizing: border-box; 
+        border: 5px;
+        border-style: solid;
+        border-color: black;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .footer{
@@ -282,6 +288,6 @@
     }
 
     .table{
-        display: block;
+        display: flex;
     }
 }
