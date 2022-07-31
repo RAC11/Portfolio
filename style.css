@@ -89,20 +89,44 @@
     padding-left: 5px;
 }
 
-    .body{
-        display: grid;
-        background-color: rgb(155, 208, 255);
-        width: 100%;
+.body{
+    display: grid;
+    background-color: rgb(155, 208, 255);
+    width: 100%;
+}
+
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(155, 208, 255);
+    width: 100%;
     }
 
-    .pictures{
+.body-top{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(155, 208, 255);
+    margin-top: 10px;
+}
+
+    .bitem1{
+        width: 96%;
+        height: auto;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
-        background-color: rgb(155, 208, 255);
-        width: 100%;
+        box-sizing: border-box;
+        border: 5px;
+        border-style: solid;
+        border-color: black;
+        background-color: antiquewhite;
     }
 
-    .body-top{
+    .body-bot{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -113,7 +137,7 @@
         background-color: rgb(155, 208, 255);
     }
 
-    .bitem1{
+    .bitem2{
         display: flex;
         background-color: antiquewhite;
         width: 48%;
@@ -128,7 +152,7 @@
         margin-bottom: 5px;
     }
     
-    .bitem2{
+    .bitem3{
         display: flex;
         width: 48%;
         height:300px;
@@ -143,28 +167,7 @@
         margin-bottom: 5px
     }
 
-.body-bot{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    background-color: rgb(155, 208, 255);
-}
 
-    .bitem3{
-        width: 96%;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        border: 5px;
-        border-style: solid;
-        border-color: black;
-        background-color: antiquewhite;
-    }
 
     /* .caption{
         display: flex;
@@ -181,7 +184,7 @@
         border: 5px;
         border-style: solid;
         border-color: black;
-        margin-top: 20px;
+        margin-top: 5px;
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -236,11 +239,11 @@
     }
     
 @media(max-width:527px){
-    .bitem1{
+    .bitem2{
         width:100%
     }
 
-    .bitem2{
+    .bitem3{
         width:100%
     }
 
@@ -265,7 +268,7 @@
         padding-right: 40px;
     }
 }
-
+ 
 @media(max-width:283px){
     .bitem1{
         width:100%
