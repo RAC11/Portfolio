@@ -45,7 +45,7 @@ if(z=37){
     let b=2
     console.log("block b: ",b)
 }
-console.log("global b: ",b)
+// console.log("global b: ",b)
 
 // = asigns the value to the variable.
 var number=10;
@@ -95,4 +95,55 @@ Hi
 This is a multi-line comment
 Bye
 */ 
-
+// Math.random() creates a random number and assigns it to the variable.
+// This IF statement makes a into a new number since it is greater than d.
+// Math.ceil rounds up to the nearest integer. Math.floor rounds down to the nearest integer.
+// Math.sqrt is the square root of the variable.
+let a=4
+let d=3
+if(a>d){
+    a=Math.random()
+    a=Math.ceil(a)
+    a=Math.floor(a)
+    console.log("a: ",a)
+    //    Math.abs takes the absolute value of the variable.
+} else if (d>a) {
+    console.log("abs: ",Math.abs(a-d))
+    // == compares a to d. vs = is just assinging
+} else if (a==d) {
+     let z=Math.PI*Math.pow(a,2)
+     // Math.trunc returns to the integer part of the number.
+     z=Math.trunc(z)
+     console.log("z: ",z)
+     // a===d compares the values and the type of the variables
+} else if (a===d){
+    console.log("a===d: ",a===d)
+} else{
+    d=Math.sqrt(d)
+    console.log("d: ",d)
+}
+ switch(a){
+    case 1:
+        console.log("switch a:", a)
+    break;
+    case 2:
+        console.log("Line 120 is false:", a)
+    break;
+    case 3:
+        console.log("Line 120 is true:", a)
+    break;
+ }
+ // A switch statment will run each block until a statement can be excuted, if none can be then it will run to the default block.
+ const Football="Browns"
+switch(Football){
+    case "Browns":
+    case "Bengals":
+    case "Saints":
+        console.log("This is a football team:", Football)
+    break;
+    case "Clippers":
+    case "Cavaliers":
+    case "Blue Jackets":
+        console.log("This is not a football team:", Football)
+    break;
+}
